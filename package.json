@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "node --check app.js && node --check index.js && node --check app.test.js",
     "start": "node index.js",
     "test": "jest --runInBand"
   },
