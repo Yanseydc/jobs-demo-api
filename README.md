@@ -6,7 +6,17 @@ Minimal Node.js API with Express, Jest, Docker, and GitHub Actions CI/CD.
 
 ## Endpoints
 
+- `GET /`
 - `GET /health`
+
+Example root response:
+
+```json
+{
+  "message": "jobs-demo-api running",
+  "health": "/health"
+}
+```
 
 ## Local development
 
@@ -18,6 +28,17 @@ npm start
 ```
 
 The API starts on `http://localhost:3000`.
+
+## Render
+
+Once deployed, your base URL should return the root JSON response.
+
+Example:
+
+```text
+https://your-render-service.onrender.com/
+https://your-render-service.onrender.com/health
+```
 
 ## Docker
 
