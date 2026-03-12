@@ -36,8 +36,8 @@ Once deployed, your base URL should return the root JSON response.
 Example:
 
 ```text
-https://your-render-service.onrender.com/
-https://your-render-service.onrender.com/health
+https://jobs-demo-api-latest.onrender.com
+https://jobs-demo-api-latest.onrender.com/health
 ```
 
 ## Docker
