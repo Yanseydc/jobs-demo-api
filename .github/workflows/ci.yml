@@ -34,3 +34,14 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+  build-image:
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Build Docker image
+        run: docker build -t jobs-demo-api:ci .
